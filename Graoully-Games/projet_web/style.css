@@ -1,0 +1,2203 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+body{
+    margin:0;
+    font-family: 'Cabin', sans-serif;
+}
+
+/*================== COMMUN ==================*/ /* ALBAN & THOMAS */ /*FINIT*/
+
+
+    /*-------- HEADER -------- */
+
+    .main-head{
+        background-color:#181a1b;
+        color:white;
+        position:fixed;
+        width:100%;
+        top: 0;
+    }
+
+    .main-head nav{
+        display: flex;
+    }
+
+    .main-head h1{
+        flex: 5 1;
+        padding-left:2%;
+        font-family: 'Orbitron' ;
+    }
+
+    @media screen and (max-width: 1450px) {
+        .main-head h1{
+          flex: 4 1;
+        }
+    }
+
+    @media screen and (max-width: 1320px) {
+        .main-head h1{
+          flex: 3 1;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        .main-head h1{
+          flex: 2 1;
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .main-head h1{
+          flex: 1.2 1;
+        }
+    }
+
+    .main-head h1 a{
+        color:white;
+        text-decoration: none;
+    }
+
+    .main-head ul{
+        list-style:none;
+        display:flex;
+        flex: 3 1;
+    }
+
+    .main-head ul a{
+        color:white;
+        text-decoration: none;
+        transition: color 500ms;
+    }
+
+    .main-head ul a:hover{
+        color:#a12b11;
+    }
+
+    .main-head li{
+        padding: 10px;
+        padding-right: 13%;
+        font-size: large;
+    }
+
+    .main-head nav ul ul{
+        display: none;
+    }
+
+    .main-head nav li:hover ul{
+        display: block ;
+        position: absolute;
+        top: 92%; 
+        right:22%; 
+        z-index: 100;
+        background-color: #181a1b;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    #sous-categ{
+        padding-bottom: 25px;
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: 1450px) {   
+        .main-head nav li:hover ul{ 
+            right:23%; 
+        }
+    }
+
+    @media screen and (max-width: 1320px) {  
+        .main-head nav li:hover ul{ 
+            right:27%; 
+        }
+    }
+
+    @media screen and (max-width: 1150px) {  
+        .main-head nav li:hover ul{ 
+            right:33%; 
+        }
+    }
+
+    @media screen and (max-width: 980px) {  
+        .main-head nav li:hover ul{ 
+            right:38.5%; 
+        }
+    }
+
+    .main-head span{
+        transition: all 500ms;
+        color:#a12b11
+    }
+
+    .main-head a:hover span{
+        color:#741c08;
+    }
+
+    /*-------- FOOTER --------*/
+
+    .main-foot{
+        background-color:#181a1b;
+        padding:1%;
+        padding-bottom: 1px;
+    }
+
+    .by{
+        color:rgba(255, 255, 255, 0.918);
+        font-size:1.1em;
+        text-align: right;
+    }
+
+    .rights{
+        color:rgba(255, 255, 255, 0.411);
+        position:relative;
+        top:14px;
+        text-align:right;
+        font-size:1em;
+    }
+
+    .partenariat{
+        color:white;
+        position: relative;
+        top:70px;
+    }
+
+    .partenariat a{
+        text-decoration: none;
+        color: #FFEF44;
+        border-bottom: 1px solid #FFEF44;
+        transition: border 250ms ease-in-out;
+    }
+
+    .partenariat a:hover{
+        border-bottom: 3px solid #FFEF44;
+    }
+    
+    
+    
+/*================== ACCEUIL ==================*/ /* Alban & Thomas */ /*FINI*/
+    
+    
+    /*-------- TITLE -------- */
+
+    .title{
+        background-attachment: fixed;
+        background-size: cover;
+        color:white;
+        text-align: center;
+        padding:386px;
+        padding-right: 80px;
+        padding-left:80px;
+    }
+
+    .titlemain{
+        background-image:url(images/back1.jpg);
+    }
+
+    .title h1{
+        font-size:3em;
+    }
+
+    .title p{
+        font-size: 1.3em;
+    }
+
+    /*-------- CATEGORIE --------*/
+
+    .categtitle{
+        background-color: #181a1b;
+        padding:5px;
+        color:white;
+        text-align: center;
+        font-size: 1.4em;
+        padding-bottom: 0.5%;
+    }
+
+    .upperline{
+        border-bottom:solid 2px white;
+        padding-top:1%;
+        margin-right:30%;
+        margin-left:30%;
+    }
+
+    .upperline1{
+        border-bottom:solid 2px white;
+        padding-top:1%;
+    }
+
+    .bg-categ{
+        background-color:rgb(36, 39, 40);
+        padding:1px;
+    }
+    
+    .section-categ-up{
+        padding:1px;
+        margin-top:2%;
+        display:flex;
+        justify-content: space-evenly;
+        margin-right:150px;
+        margin-left:150px;
+    }
+
+    .section-categ-down{
+        padding:1px;
+        margin-top:2%;
+        margin-bottom:2%;
+        display:flex;
+        align-items: 100%;
+        justify-content: space-evenly;
+        margin-right:150px;
+        margin-left:150px;
+    }
+
+    .categ{
+        background-color: rgb(29, 31, 33);
+        max-width:300px;
+        box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+        border-radius: 4px;
+   }
+
+    .categ a{
+        color:black;
+        text-decoration: none;
+        padding:0px;
+    }
+
+    .categ figure{
+        margin:0px;
+        padding:0px;
+        background-color:white;
+        height:200px;
+    }
+
+    .categ figure img{
+        height:200px;
+        width: 300px;
+        padding:0px;
+        transition: opacity 500ms;
+    }
+
+   .categ h2{
+       font-size:2em;
+       padding-left:6%;
+       transition: color 500ms;
+       text-align: left;
+       color:rgb(232, 230, 227);
+   }
+
+   .categ p{
+       padding:4%;
+       text-align:justify;
+       color:rgb(232, 230, 227);
+   }
+
+   .top-categ{
+       height: 430px;
+   }
+
+   .bottom-categ{
+    height: 59px;
+   }
+
+   .bottom-categ p{
+       padding:0.4%;
+       padding-right:4%;
+       font-weight: bold;
+       text-align: right;
+       transition: color 500ms;
+       color:inherit;
+       color:rgb(232, 230, 227);
+   }
+
+   .top-categ:hover img{
+       opacity:0.7;
+   }
+
+   .top-categ:hover h2{
+       color:#c63617;
+   }
+
+   .bottom-categ:hover p{
+       color:#c63617;
+   }
+
+   
+    
+
+/*================== ESPORT ==================*/ /* ALBAN & JEREMY & ROMAIN*/
+
+    /*======== Acceuil ======== /* ALBAN */
+
+        /*----- Definition -----*/
+
+    .titleesport{
+        background-image:url(images/esport.jpg);
+    }
+
+    .presentationdef{
+        background-color:rgb(29, 31, 33);
+        box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+        border-radius: 4px;
+        color:rgb(232, 230, 227);
+        max-width: 20%;
+        height:85%;
+        padding:1%;
+        margin-left:1.5%;
+    }
+
+    .presentationdef h2{
+        font-size:2em;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    .presentationdef p{
+        text-align:justify;
+    }
+    .presentationtext{
+        color:rgb(232, 230, 227);
+        text-align: justify;
+        margin-left:2%;
+        margin-right: 2%;
+    }
+
+    .presentationtext h2{
+        font-size:2em;
+        text-align: left;
+    }
+    
+    .presentation{
+        background-color: rgb(36, 39, 40);
+        display:flex;
+        align-items: center;
+        padding-bottom: 5%;
+        padding-top:2%;
+    }
+        /*----- Jeux Categ -----*/
+
+    .wordup{
+        color:#bd2836;
+    }
+
+    .esportgame{
+        background-color:rgb(36, 39, 40);
+    }
+    
+    .esportgame h2{
+        text-align: center;
+        background-color:rgb(36, 39, 40);
+        font-size:2.5em;
+        color:rgb(232, 230, 227);
+        margin:0px;
+        padding:1%;
+        padding-top: 5%;
+    }
+
+    .esportcateg{
+        background-color: rgb(36, 39, 40);
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 4% 0 4% 0;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    .esportcateg img{
+        height: 300px;
+        width: 500px;
+        transition: all 750ms;
+    }
+
+    .esportcateg figure{
+        background-color:white;
+        margin:0;
+        padding: 0;
+        height:300px;
+    }
+
+    .esportcateg .csgo{
+        background-color:rgb(29, 31, 33);
+        padding:1% 0.5% 1% 2%;
+    }
+    .esportcateg .lol{
+        background-color:rgb(29, 31, 33);
+        padding:1% 0.5% 1% 0.5%;
+    }
+    .esportcateg .rl{
+        background-color:rgb(29, 31, 33);
+        padding:1% 2% 1% 0.5%;
+    }
+
+    .esportcateg .text{
+        margin: 0px;
+        display:block;
+        text-decoration: none;
+        color:rgb(232, 230, 227);
+        text-align: center;
+        font-size:1.4em;
+        transition:all 500ms;
+    }
+
+    .esportcateg a{
+        text-decoration: none;
+    }
+
+    .esport:hover img{
+        opacity:0.8;
+    }
+
+    .esport:hover .text{
+        color:#c63617;
+    }
+
+    /*======== CS:GO ========*/ /* ALBAN */
+
+    .size1{
+        font-size: 1.2em;
+    }
+
+    .size2{
+        font-size:1.9em;
+    }
+
+    .titlecsgo{
+        background-image: url(images/esportcsgo.jpg);
+    }
+
+    .container-csgo{
+        color:rgb(232, 230, 227);
+        border-right: solid 5px rgb(22, 25, 31);
+        border-left:solid 5px rgb(22, 25, 31);
+    }
+
+    .presentationcsgo{
+        background-color:rgb(29, 31, 33);
+        box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+        border-radius: 4px;
+        color:rgb(232, 230, 227);
+        max-width: 25%;
+        height:85%;
+        padding:1%;
+        margin-top:0.5%;
+        margin-bottom: 1%;
+        margin-left:1.5%;
+    }
+
+    .presentationcsgo h2{
+        font-size:2em;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    .presentationcsgo p{
+        text-align:justify;
+    }
+
+    .presentationtextcsgo{
+        color:rgb(232, 230, 227);
+        text-align: justify;
+        margin-left:2%;
+        margin-right: 5%;
+    }
+
+    .presentationtextcsgo h2{
+        text-align: left;
+        font-size:2em;
+    }
+    
+    .presentation{
+        display:flex;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+
+    .diff img{
+        height: 150px;
+    }
+
+    .tournois{
+        display:flex;
+    }
+
+    .explication{
+        margin-top:2%;
+        width: 60%;
+    }
+
+    .explication h2{
+        text-align: left;
+        margin-left:2%;
+        font-size:1.9em;
+    }
+
+    .explication p{
+        margin: 1% 1% 0% 3%;
+        font-size:1.1em;
+    }
+
+
+    .diff{
+        width:25%;
+        height: 20%;
+        border-left:solid 5px #181a1b;
+        padding-left:3%;
+        padding-top:2%;
+        padding-right: 6%;
+    }
+
+    .topdiff{
+        display:flex;
+    }
+
+    .bottomdiff{
+        padding-top:5%;
+    }
+
+    .dh{
+        padding-left:15%;
+    }
+
+    .ecs{
+        padding-left:7%;
+    }
+
+    .eleague{
+        padding-left:35%;
+    }
+
+    @media screen and (max-width: 1800px) {  
+        .eleague{
+        position: relative;
+        left: 145px;
+        bottom:150px;
+        }
+    }
+
+    .equipe{
+        display: flex;
+        margin:5% 5% 5% 5%;
+    }
+    
+
+
+    .classementexpli{
+       margin:3% 2% 0 5%;
+    }
+
+    .csgo2{
+        padding-top:5%;
+    }
+
+    .ouregarder{
+        margin:5% 5% 0 5%;
+        padding-bottom: 5%;
+    }
+    
+
+    .ouregarder p, .ouregarder h1{
+        text-align: center;
+    }
+
+    .lienregarder{
+        text-align:center;
+        margin-top: 5%;
+    }
+
+    .lienregarder img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border:solid 4px rgb(65, 15, 68);
+        transition: all 500ms;
+        box-shadow: rgba(0, 0, 0, 0.82) 15px 0px 30px, rgba(0, 0, 0, 0.1) 0px 1px 4px; ;
+    }
+
+    .lienregarder img:hover{
+        border:solid 4px  rgb(105, 6, 105);
+    }
+
+    .pvcs{
+        margin-left:3%;
+        margin-right: 3%;
+    }
+
+
+    /*======== LoL ========*/ /* JEREMY */
+
+    /*------- Body league of legends -------*/
+
+.backcolorlol {
+    margin:0;
+}
+
+/*------- Titre league of legends -------*/
+#section_titre_esportlol {
+   background-image:url(images/BackLol.jpg);
+   padding:386px;
+    padding-right: 80px;
+    padding-left:80px;
+   background-size:cover;
+   color:white;
+   text-align:center; 
+}
+
+.titrelol {
+    font-size:3em;
+}
+
+.titrelol2 {
+    font-size: 1.3em;
+}
+/*------ Navigation League of legends -------*/
+.nav-lol {
+    background-color:rgb(47, 50, 56);
+}
+.nav-lol ul {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    margin-right:32%;
+    margin-left:30%;
+    background-color:rgb(47, 50, 56);
+    color:white;
+    margin-top:0;
+    margin-bottom:0;
+    font-size:25px;
+    height:40px;
+}
+.nav-lol li { 
+    font-size:30px;
+    text-align:center;
+   justify-content:space-between;
+}
+.nav-lol a:hover  {
+    background-color:white;
+    color:rgb(22, 25, 31);
+    transition:1s
+}
+.nav-lol a {
+    text-decoration:none;
+    color:white;
+    
+}
+/*------- League of legends images ------*/
+
+.containerlol {
+    display:flex;
+    position:relative;
+    
+}
+
+.placenex {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:87.5%;
+    left:15%;
+    font-size:30px;
+}
+.placetop {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:25%;
+    left:19%;
+    font-size:30px;
+}
+.placejung {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:33%;
+    left:30%;
+    font-size:30px;
+}
+.placemid {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:41%;
+    left:44%;
+    font-size:30px;
+}
+.placebot {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:79%;
+    left:70%;
+    font-size:30px;
+}
+.placetour {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:34%;
+    left:55%;
+    font-size:30px;
+}
+.placebaron {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:25%;
+    left:31%;
+    font-size:30px;
+}
+.placedragon {
+    display:flex;
+    align-items:center;
+    vertical-align:center;
+    justify-content:center;
+    position:absolute;
+    z-index:999;
+    color:white;
+    top:52%;
+    left:63%;
+    font-size:30px;
+}
+.placenex .cacher {
+    display:none;
+}
+.placenex:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    bottom:82%;
+    width:350px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placetop .cacher {
+    display:none;
+}
+.placetop:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    top:82%;
+    width:200px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placejung .cacher {
+    display:none;
+}
+.placejung:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    top:82%;
+    width:200px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placemid .cacher {
+    display:none;
+}
+.placemid:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    top:82%;
+    width:300px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placebot .cacher {
+    display:none;
+}
+.placebot:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    bottom:82%;
+    width:400px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placetour .cacher {
+    display:none;
+}
+.placetour img {
+    width:100%;
+
+}
+.placetour:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    top:82%;
+    width:400px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placebaron .cacher {
+    display:none;
+}
+.placebaron img {
+    width:400px;
+}
+.placebaron:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    top:82%;
+    width:400px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+.placedragon .cacher {
+    display:none;
+}
+.placedragon img {
+    width:400px;
+}
+.placedragon:hover .cacher {
+    display:inline-block;
+    position:absolute;
+    bottom:82%;
+    width:400px;
+    border:3px solid rgb(47, 50, 56);
+    background:white;
+    text-align: center;
+    color:black;
+    font-size:20px;
+}
+#lienlol2 .lolmap2 {
+    width:99vw;
+    height:100vh;
+}
+.lolmap {
+    width:99.1vw;
+    height:100vh;   
+}
+.lolmap4.lolmap5 {
+    height:100%;
+    width:100%;
+}
+.lolmap4:hover,.lolmap5:hover {
+    opacity:0.5;
+    transition:1s;
+}
+
+
+#lienlol3 img:hover {
+    opacity:0.8;
+    transition:opacity 0.5s;
+}
+/*--- contenu lol texte ---*/
+#lol,#lolcompet,#lolequipe .loltitre1 {
+    color:rgb(47, 50, 56);
+    text-align:center;
+    font-size:30px;
+}
+#lolesport h1 {
+    margin-top:2%;
+    color:white;
+    text-align:center;
+    font-size:50px;
+}
+#lolequipe {
+    bottom:-2%;
+}
+#lolequipe h1 {
+    margin-top:2%;
+    color:white;
+    text-align:center;
+    font-size:50px;
+}
+
+
+.loltext,.loltext1,.loltext2,.loltext3{
+    max-width:60%;
+    margin-top:5%;
+    margin-left:20%;
+    font-size:30px;
+    text-align:center;
+    color:rgb(232, 230, 227);
+}
+#lol h3 {
+    text-align:center;
+    font-size:30px;
+    margin-top:5%;
+    margin-bottom:18%;
+}
+#lolcompet h3 {
+    text-align:center;
+    font-size:30px;
+    margin-top:5%;
+    margin-bottom:18%;
+}
+
+
+.flexlol a {
+    text-decoration:none;
+    color:#003366;
+}
+
+#lolequipe {
+    height:93.2vh;
+}
+.redlol {
+    color:#bd2836;
+}
+
+/*--- categories lol---*/
+.categtitle {
+    background-color: rgb(22, 25, 31);
+    padding:5px;
+    color:white;
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 0.5%;
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+}
+.section-categ-lol{
+    padding:1px;
+    margin-top:2%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-right:150px;
+    margin-left:150px;
+    margin-bottom:6%;
+}
+
+.categ-lol{
+    background-color: rgb(22, 25, 31);
+    max-width:400px;
+    padding:25px;
+    margin-left:1%;
+    margin-right:1%;
+    color:rgb(232, 230, 227);
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+}
+.categ-lol h2 {
+    text-align:center;
+}
+
+
+/*---table lol ---*/
+
+table.blueTable {
+    border: 1px solid #153C49;
+    background-color: #FDFFFE;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left:25%;
+    margin-bottom:10%;
+}
+table.blueTable td, table.blueTable th {
+    border: 1px solid #000000;
+    padding: 3px 2px;
+}
+table.blueTable tbody td {
+    font-size: 13px;
+    color: #153332;
+}
+table.blueTable thead {
+    background: #134D72;
+    border-bottom: 2px solid #000000;
+}
+table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #000000;
+}
+table.blueTable thead th:first-child {
+    border-left: none;
+}
+  
+table.blueTable tfoot td {
+    font-size: 14px;
+}
+table.blueTable tfoot .links {
+    text-align: right;
+}
+table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+
+
+
+
+    /*======== RL ========*/ /* ROMAIN */
+
+    .rlicone, .rlcslogo, .rvitality, .tsolary, .fairypeak, .kaydop{
+        height: 150px;
+    }
+
+
+
+    .img1{
+    text-align: center;
+}
+
+table.teamrank .teamicon{
+    text-align: left;
+}
+
+
+
+
+    .descrl, .comprl, .compfrrl, .palmrlcs{
+        background-color:rgb(29, 31, 33);
+        margin : 0% 15% 1% 15%;
+        padding: 1% 3% 1% 3%;
+        box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+        margin-top: 0px;
+    }
+
+    .classmond{
+        margin : 1% 15% 0% 15%;
+        background-color:rgb(29, 31, 33);
+        padding: 1% 3% 1% 3%;
+        box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+    }
+
+    .bodyrl{
+        background-color: rgb(36, 39, 40);
+        color: rgb(232, 230, 227);
+    }
+
+    .rocketleague{
+        background-image: url(images/rocketleagueesports.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 280px;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .descrl h1, .comprl h1, .compfrrl h1, .palmrlcs h1, .classmond h1{
+        text-align: center;
+        font-size: 25px;
+        color: blanchedalmond;
+    }
+
+    table.teamrank .imgleft{
+        text-align: left;
+    }
+
+    table.teamrank td, table.oldchamprl td{
+        color: black;
+    }
+
+    table.teamrank {
+        margin : auto;
+        border: 1px solid #1C6EA4;
+        background-color: #EEEEEE;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      table.teamrank td, table.teamrank th {
+        border: 1px solid #AAAAAA;
+        padding: 3px 2px;
+      }
+      table.teamrank tbody td {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+      }
+      table.teamrank thead {
+        background: #424242;
+        border-bottom: 2px solid #444444;
+      }
+      table.teamrank thead th {
+        font-size: 15px;
+        font-weight: bold;
+        color:  white;
+        text-align: center;
+        border-left: 2px solid #D0E4F5;
+      }
+      table.teamrank thead th:first-child {
+        border-left: none;
+      }
+      
+      table.teamrank tfoot td {
+        font-size: 14px;
+      }
+      table.oldchamprl {
+        margin: auto;
+        border: 1px solid #1C6EA4;
+        background-color: #EEEEEE;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      table.oldchamprl td, table.oldchamprl th {
+        border: 1px solid #AAAAAA;
+        padding: 3px 2px;
+      }
+      table.oldchamprl tbody td {
+        font-size: 13px;
+        font-weight: bold;
+      }
+      table.oldchamprl thead {
+        background: #424242;
+        border-bottom: 2px solid #444444;
+      }
+      table.oldchamprl thead th {
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        border-left: 2px solid #D0E4F5;
+      }
+      table.oldchamprl thead th:first-child {
+        border-left: none;
+      }
+      
+      table.oldchamprl tfoot td {
+        font-size: 14px;
+      }
+.teamicon{
+    width: 60px;
+    height: 25px;
+}
+
+
+
+
+
+/*================== METIER ================== */ /* ALBAN */
+
+
+.metier-body{
+    background-color:#1c1e1f;
+}
+
+.titlemetier{
+    background-image: url(images/metier.jpg);
+}
+
+.container-metier{
+    display:flex;
+    background-color:rgb(36, 39, 40);
+    margin: 0 7% 0 7%;
+    color:rgb(232, 230, 227);
+    box-shadow: rgba(0, 0, 0, 0.82) 0px 0px 30px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+}
+
+.left-box{
+    color:rgb(232, 230, 227);
+    padding-top:3%;
+}
+
+.metiercateg{
+    width: 262px;
+    height: 425px;
+    margin-left:23%;
+    background-color:rgb(29, 31, 33);
+    box-shadow: rgba(0, 0, 0, 0.82) 0px 0px 30px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    border-radius: 4%;
+    margin-bottom: 15%;
+}
+
+.metiercateg h2{
+    padding-left:3%;
+    text-align: left;
+}
+
+.metiercateg p{
+    padding:3%;
+}
+
+.metiercateg figure, .metiercateg figure img{
+    height: 175px;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 4%;
+}
+
+.up-right-box{
+    display: flex;
+    margin: 5%;
+    margin-left:13%;
+}
+
+.metier{
+    width: 60%;
+    margin-top:5%;
+}
+
+.right-boxp{
+    padding-top:1%;
+    margin-left:2%;
+    font-size: 1.2em;
+}
+
+.maj{
+    font-size:1.5em;
+}
+
+.metierpic figure, .metierpic figure img{
+    height: 400px;
+    margin: 0;
+    margin-left:3%;
+    border-radius: 10% 3% 10% 3%;
+}
+
+.streamer{
+    margin: 0 5% 0 13%;
+}
+
+.streamex{
+    margin: 6% 0 0 13%;
+}
+
+.marginstreamer{
+    margin-left:10%;
+}
+
+
+.imgstreamer img{
+    height: 165px;
+    border-radius: 40%;
+    border: solid 5px #6441a5;
+    transition: border 700ms;
+    margin-top:2%;
+    margin-right: 5%;
+}
+
+.imgstreamer img:hover{
+    border:solid 5px purple;
+}
+
+.streamerimg-bot{
+    margin-bottom: 5%;
+}
+
+
+
+
+/*================== ACTUALITE ==================*/ /* JEREMY */
+
+
+/*-------- Titre Actualité -------- */
+
+#section_titre {
+    background-image:url(images/backactu.jpeg);
+    background-repeat:no-repeat;
+    color:white;
+    text-align: center;
+    padding:390px;
+    background-size:cover;   
+ }
+ 
+ 
+ .titre {
+     font-size:3em;
+ }
+ 
+ .titre2 {
+     font-size: 1.3em;
+ }
+
+/*-------- Navigation Actualité -------- */
+
+.nav-actu {
+    background-color:rgb(47, 50, 56);
+    padding:10px;
+}
+.nav-actu ul {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    margin-right:32%;
+    margin-left:30%;
+    background-color:rgb(47, 50, 56);
+    color:white;
+    margin-top:0;
+    margin-bottom:0;
+    font-size:25px;
+    height:40px;
+    
+}
+.nav-actu li {
+    
+    font-size:35px;
+    text-align:center;
+   justify-content:space-between;
+   
+}
+.nav-actu a:hover  {
+    background-color:white;
+    color:rgb(47, 50, 56);
+    transition:1s;
+    
+}
+.nav-actu a {
+    text-decoration:none;
+    color:white;
+    padding:10px;
+}
+/*-------- body actualité -------- */
+body {
+    margin:0;
+    background-color: rgb(36, 39, 40);
+}
+/*-------- Titre article actualité -------- */
+li .rtx {
+    background-color:black;
+    text-align:center;
+    max-width:13%;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199);
+ }
+ 
+  li .ps5 {
+    background-color:black;
+    text-align:center;
+    max-width:8%;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199)
+  }
+  li .covid19Actu {
+    background-color:black;
+    max-width:55%;
+    text-align:center;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199);
+  }
+   li .xbox {
+    background-color:black;
+    max-width:15%;
+    text-align:center;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199);
+  }
+  li .MJN {
+    background-color:black;
+    max-width:39%;
+    text-align:center;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199);
+ }
+  li .exclu {
+    background-color:black;
+    max-width:60%;
+    text-align:center;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199);
+  }   
+ li .Zevent {
+    background-color:black;
+    max-width:14%;
+    text-align:center;
+    padding:5px;
+    border:3px solid rgb(47, 50, 56);
+    color:rgb(199,199,199);
+ }  
+  /*-------- Sous-titre article actualité -------- */
+ .gauche  {
+    text-align:left;
+    color:rgb(232, 230, 227);
+    font-size:25px;
+ }
+ .gauche1 {
+    margin-top:4%;
+    color:rgb(232, 230, 227);
+    font-size:25px;
+
+ }
+ /*-------- Contenu  actualité -------- */
+
+.actu-liste a{
+    color:rgb(199,199,199);
+}
+
+#section_actu {
+    margin-left:12%;
+    margin-right:12%;
+    margin-top:5%;
+    margin-bottom:5%;
+    background-color:rgb(29, 31, 33);
+    color:rgb(232, 230, 227);
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+}
+
+section .actu-liste {
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.actu-liste .color  {
+    text-align:center;
+    color:rgb(199,199,199);
+}
+
+.actu-liste .video1 {
+   margin-left:48%;
+   margin-bottom:1%;
+   max-width:50%;
+}
+
+#article_actu .left {
+    float:left;
+}
+
+#article_actu ul {
+    display:flex;
+    flex-direction: column;
+    list-style-type:none;
+    color:rgb(232, 230, 227);
+}
+
+
+.actu-liste .liste-actu{
+    
+    border-bottom:4px solid black;
+   margin-right:2%;
+   font-size:150%;
+}
+
+ .actu-liste img {
+   width:15%;
+   margin-right:2%;
+   margin-top:1%;
+   margin-bottom:2%; 
+}
+
+ .actu-liste table {
+    margin-left:15%;
+    color:black;
+    border:2px solid white;
+    border-color:black;
+    background-color:rgb(199,199,199);
+    max-width:50%;
+}
+
+ .actu-liste table td {
+    border:2px solid white;
+    border-color:black;
+}
+ .actu-liste table th {
+    border:2px solid white;
+    border-color:black;
+}
+
+.actu-liste li p {
+    margin-left:17%;
+    margin-top:5%;
+    
+}
+
+
+.remonte {
+    border-bottom:4px solid black;
+    margin-right:2%;
+   font-size:150%;
+}
+
+.remonte p {
+    margin-top:4.5%; 
+}
+
+
+.lienActu {
+    text-decoration:none;
+    color:#1560BD;
+}
+ul .liste2  {
+    margin-top:2%;
+    border:none;
+    margin-left:30%;    
+    
+}
+
+.liste-actu .tweet {
+    margin-left:30%;
+    margin-top:2%;  
+    width:400px;
+}
+
+.videocenter {
+    display:block;
+    margin-left:auto;
+    margin-right:39.4%;
+    max-width:50%;
+}
+
+.bluecenter {
+    margin-left:25%;
+    color:#bd2836;
+}
+
+.videolol {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:50%;
+}
+.blue-actu {
+    color:#bd2836;
+}
+
+.DMPC {
+    display:block;
+    margin-left:42%;
+    margin-right:20%;
+}
+.derniere-actu p {
+    font-size:25px;
+}
+
+/*================== GENRE ================== */ /* THOMAS */
+
+/*-------- GENRE -------- */ /* Thomas */
+
+.genre-body{
+    background-color: rgb(36, 39, 40);
+}
+
+/*-------- TITLE GENRE -------- */
+
+#title_genre{
+    background-image: url(images/back_genre.jpg); 
+    background-attachment: fixed;
+    color:  rgb(232, 230, 227);
+    text-align: center;
+    padding: 280px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#title_genre h1{
+    font-size:3em;
+    padding: 0;
+}
+
+#title_genre p{
+    font-size: 1.3em;
+}
+
+/*-------- MAIN --------*/
+
+.main_genre{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 75px;
+    color: rgb(232, 230, 227);
+    background-color:rgb(29, 31, 33);
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+    overflow: auto;
+}
+
+
+/*-------- BARRE NAV -------- */
+
+.nav_genre{
+    background-color: #181a1b;
+    color:  rgb(232, 230, 227);
+}
+
+#ul_up{
+    list-style-type: none;
+    padding-top: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#ul_up li{
+    display: inline;
+    border:  rgb(232, 230, 227) solid 2px; 
+    padding:15px;
+    margin-left:35x;
+    margin-right: 35px;
+    background-color: #2c2929;
+    transition: background-color 500ms;
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+}   
+
+
+#ul_down{
+    list-style-type: none;
+    padding-bottom: 40px;
+    margin-top:65px;
+    text-align: center;
+}
+
+#ul_down li{
+    display: inline;
+    border:  rgb(232, 230, 227) solid 2px; 
+    padding:15px;
+    margin-left:35x;
+    margin-right: 35px;
+    background-color: #2c2929;
+    transition: background-color 500ms;
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+}
+
+.nav_genre a{
+
+    text-decoration: none;
+    color:inherit;
+    height: 100%;
+    width: 100%;
+}
+
+#ul_up li:hover{
+    background-color:rgb(199, 199, 199);
+    color: black;
+}
+
+#ul_down li:hover{
+    background-color:rgb(199, 199, 199);
+    color: black;
+}
+
+/*-------- AVENTURE -------- */
+
+.aventure, .plateforme, .mmo, .simu, .inde, .fps, .survie, .rpg{
+    padding: 10px;
+}
+
+.main_genre h1{
+    color: rgb(232, 230, 227);
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 20px;
+    border-top: black solid 4px;
+}
+
+.fig_aventure, .fig_plateforme, .fig_mmo, .fig_simu, .fig_inde, .fig_fps, .fig_survie, .fig_rpg{
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+
+.main_genre span span{
+    display: none;
+}
+
+#open-world{
+    color:  #bd2836;
+}
+
+#open-world:hover span {
+    display: inline;
+    position: absolute;
+    margin-top:25px;
+    left: 320px;
+    width: 400px;
+    border:3px solid #bd2836;
+    background: rgb(232, 230, 227);
+    text-align: center;
+    color: black;
+    }
+
+
+.fig_aventure img{
+    width: 700px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+.main_genre p{
+    margin-top: 25px;
+    margin-left: 25%;
+    font-size: 1.1em;
+}
+
+.aventure span span{
+    display: none;
+}
+
+span:hover span{
+    display: block;
+    position: absolute;
+    margin:0 0 0 0;
+    margin-left: 80px;
+} 
+
+#tombraider:hover span {
+    margin-left: 270px;
+} 
+
+#rdr:hover span {
+    margin-left: 335px;
+} 
+
+
+/*-------- PLATEFORME -------- */
+
+#plateforme, #mmo, #simu, #inde, #fps, #gestion, #rpg{
+    margin-top: 50px;
+}
+
+.fig_plateforme img{
+    width:650px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+
+#rayman:hover span {
+    margin-left: 200px;
+} 
+
+#D-K:hover span {
+    margin-left: 375px;
+} 
+
+/*-------- MMO -------- */
+
+.fig_mmo img{
+    width:470px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+#elder:hover span {
+    margin-left: 200px;
+} 
+
+#dofus:hover span {
+    margin-left: 330px;
+} 
+
+/*-------- Simulation -------- */
+
+.fig_simu img{
+    width:790px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+#farming:hover span {
+    margin-left: 200px;
+} 
+
+#coaster:hover span {
+    margin-left: 330px;
+} 
+
+/*-------- Indépendant -------- */
+
+.fig_inde img{
+    width:760px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+
+#hotline:hover span {
+    margin-left: 150px;
+} 
+
+#kerbal:hover span {
+    margin-left: 400px;
+} 
+
+/*-------- FPS -------- */
+
+.fig_fps img{
+    width:500px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+#doom:hover span {
+    margin-left: 150px;
+} 
+
+#bf:hover span {
+    margin-left: 200px;
+}
+
+/*-------- Survie -------- */
+
+.fig_survie img{
+    width:720px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+#rust:hover span {
+    margin-left: 100px;
+} 
+
+#ds:hover span {
+    margin-left: 200px;
+}
+
+/*-------- RPG -------- */
+
+.fig_rpg img{
+    width:700px;
+    margin-right: 40px;
+    border:#bd2836 solid 3px;
+}
+
+#skyrim:hover span {
+    margin-left: 100px;
+} 
+
+#cyberpunk:hover span {
+    margin-left: 240px;
+}
+
+
+
+
+
+
+/*================== HISTOIRE ================== */ /* JULIEN */
+
+
+/*-------- HISTOIRE -------- / / Julien /
+
+    /-------- CSS histoire -------- */
+
+    .histoire-body{
+        background-color:rgb(36, 39, 40);
+        color: black;
+    }
+
+    #titre_hist{
+        background-color:white;
+        margin: 70px;
+        margin-bottom: 30px;
+        margin-top: 35px;
+    }
+
+    #titre_hist p{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .img_histoire{
+        width: 95%;
+        padding: 20px;
+        background-color:black;
+        margin: 20px;
+    }
+
+    #titre_hist h1{
+        color:#ff3347;
+        font-style: italic;
+    }
+
+    .partiedeux_hist img{
+        float:left;
+        margin-right: 30px;
+        padding:5px;
+        margin-bottom: 3%;
+        border: 3px solid black;
+    }
+
+    .partietrois_hist img{
+        float:left;
+        margin-right: 30px;
+        padding:5px;
+        margin-bottom: 3%;
+        border: 3px solid black;
+    }
+
+    .partietrois_hist h2{
+        color: #ff3347;
+        text-decoration: underline;
+        font-weight:bold;
+    }
+
+    .partietrois_hist h2{
+        clear:both;
+    }
+
+    #ligne_hist{
+        clear: both;
+    }
+
+    #droite_hist{
+        float: right;
+        margin-left: 30px;
+        padding: 5px;
+    }
+
+    .partietrois_hist{
+        padding-bottom: 90px;
+    }
+
+    .partietrois_hist span{
+        color: #ff3347;
+        font-weight:bold;
+    }
+
+    #titre_hist h1,h2{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+/*================== LEXIQUE ================== */ /* ROMAIN */
+
+
+.bglex{
+    background-color: rgb(36, 39, 40);
+}
+.bodylex h1{
+    text-align: center;
+    font-size: 25px;
+    border-top: black solid 4px;
+}
+.bodylex{
+    background-color:rgb(29, 31, 33);
+    color: rgb(232, 230, 227);
+    margin : 1% 15% 1% 15%;
+    padding: 1% 3% 1% 3%;
+    box-shadow: 0 0 25px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1);
+
+}
+
+.titlelex{
+    background-image: url(images/dictionnaire\ la.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 280px;
+    color: white;
+    text-align: center;
+ 
+}
+
+.lexdial, .lextech, .lexgame{
+
+    padding: 1% 3% 1% 3%;
+}
+
+
+.lexdial li h2, .lextech li h2, .lexgame li h2{
+    color: #bd2836;
+    font-size: larger;
+    text-align: left;
+}
+
+
+
+.lexdial ul, .lextech ul, .lexgame ul{
+    list-style: none;
+}
+
+
+
+.quotelex{
+    font-style: italic;
+    color: #bd2836;
+
+}
+.lexgame a{
+    text-decoration: none;
+    color:#bd2836;
+    font-style: oblique;
+}
+
+.importantlex{
+    color: #bd2836;
+}
+
+
+/*-------- CONTACT -------- */ /* Thomas */
+
+    /*-------- EQUIPE -------- */
+
+    .body-contact{
+        color: rgb(232, 230, 227);
+        }   
+    
+        .main-contact{
+            background-color:rgb(36, 39, 40);
+        }
+    
+        .contact_title{
+            padding:15px;
+            padding-top: 35px;
+            margin-top: 70px;
+            text-align: center;
+            font-size: 90%;
+        }
+    
+        .dev_liste{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .dev_membre{
+            background-color: rgb(29, 31, 33);
+            box-shadow: rgba(0, 0, 0, 0.82) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+            border-radius: 4px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            padding: 12px 15px;
+            margin: 20px;
+            border-radius: 3%;
+            margin-bottom: 45px;
+        }
+    
+        .dev_nom{
+            text-align: center;
+            font-size: large;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: rgb(116, 162, 218);
+        }
+    
+        .dev_social{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1 0 auto;
+            text-align: center;
+        }
+    
+        .dev_photo{
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    
+        .dev_texte{
+            max-height: 4.5em;
+            overflow: hidden;
+            white-space: pre-wrap;
+            margin-bottom:14px;
+        }
+    
+        .job{
+            font-size: 75%;
+        }
+    
+        .dev_comptes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .dev_comptes a{
+            text-decoration: none;
+        }
+    
+        .dev_compte{
+            height: 25px;
+            width: 25px;
+            margin: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0;
+        }
+    
+        .dev_compte:hover{
+            transform: scale(1.20);
+        }
+    
+        /*-------- MAP -------- */
+    
+        .map_iut{
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 35px;
+        }
+    
+        .nous_trouver{
+            padding-bottom: 10px;
+        }
+
+
+/* INFORMATIONS */
+
+.titreinfo h1{
+    color:rgb(232, 230, 227);
+    margin-top:5%;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.titreinfo h2{
+    text-align: center;
+    font-size:1.4em;
+    color:rgba(232, 230, 227, 0.616);
+}
+
+.orga{
+    background-color:rgb(29, 31, 33);
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 60px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    border-radius: 10px;
+    margin: 3% 25% 3% 25%;
+    width: 1000px;
+    height: 680px;
+}
+
+.orga h1{
+    padding:3%;
+    color:rgb(232, 230, 227);
+}
+
+.orga img{
+    position: relative;
+    right: 10px;
+}
